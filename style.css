@@ -8,7 +8,6 @@
 /* styling for the nav bar begins*/
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 60px;
   background-color: #00aeff;
@@ -16,20 +15,61 @@ nav {
   font-size: 16px;
   line-height: 19px;
   font-weight: 700;
+  padding: 0 50px;
 }
-nav > * {
-  border-right: 1px solid #fff;
+nav > *:not(:nth-child(1)) {
+  border-right: 2px solid #fff;
+  padding-right: 10px;
 }
 .logoImg {
   text-decoration: none;
   font-family: "Lato", sans-serif;
   color: #fff;
   font-size: x-large;
+  margin-right: auto;
 }
 .whatsapp-icon {
   height: 30px;
   width: 30px;
 }
+
+nav .support {
+  background-color: rgb(6, 54, 104);
+  margin: auto 10px;
+  padding-right: 20px;
+  display: flex;
+  border-radius: 25px;
+}
+.support > img {
+  border-radius: 50%;
+}
+.support-text {
+  font-size: 10px;
+  color: rgb(26, 182, 255);
+
+}
+#tel {
+  font-size: 14px;
+  color: #fff;
+}
+
+nav .currency {
+  display: flex;
+  align-items: center;
+}
+.currency > i {
+  margin-left: 5px;
+}
+
+nav .account {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+nav .account > * {
+  margin-left: 5px;
+}
+
 /* styling for the nav bar ends */
 
 /* styling for the homepage image and  begins*/

@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link href="/public/styles.css" rel="stylesheet"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>Hotel.ng Project</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Nav Bar Div -->
-    <nav>
-      <a class="logoImg" href="#">Hotels.ng</a>
-      <a href="#">
-        <img
-          class="whatsapp-icon"
-          src="Image/whatsapp-icon.svg"
-          alt="whatsapp icon"
-          srcset=""
-        />
-      </a>
-      <a href=""></a>
-      <!-- <select name="currency" id="role">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link href="/public/styles.css" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>Hotel.ng Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Nav Bar Div -->
+  <nav class="nav">
+    <a class="logoImg" href="#">Hotels.ng</a>
+    <a href="#">
+      <img class="whatsapp-icon" src="./img/whatsapp-icon.svg" alt="whatsapp icon" srcset="" />
+    </a>
+    <div>
+      <div class="support">
+        <img src="./img/navbar-contact-min.jpg" alt="support">
+        <span>
+          <span class="support-text">You can call us to book your hotel</span>
+          <p>
+            <span id="tel" href="tel:+">+234 700 880 8800</span>
+            <i class="fa fa-caret-down"></i>
+          </p>
+        </span>
+      </div>
+    </div>
+    <div class="dropdown">
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+
+    <div class="currency">
+      <img src="./img/nigeria-flag.png" alt="" width="32px" height="23px">
+      <i class="fa-solid fa-naira-sign"></i>
+      <i class="fa fa-caret-down"></i>
+    </div>
+
+    <div class="account">
+      <img src="img/user-avatar.svg" alt="user" width="30px" height="35px">
+      <span>Account</span>
+      <i class="fa fa-caret-down"></i>
+    </div>
+    <!-- <select name="currency" id="role">
           <option value="naira">Nigerian Naira</option>
           <option value="euro">European Euro</option>
           <option value="dollar">U.S. dollar</option>
           <option value="pound">British Pound Sterling</option>
       </select> -->
-    </nav>
-    <!-- <div class="home_container jumbotron">
+  </nav>
+  <!-- <div class="home_container jumbotron">
         <img src="Image/homepage1.jpg" alt="hotel_image">
 
         <div class="overlay">
@@ -52,31 +74,24 @@
           </div>
       </div>
       </div> -->
-    <div
-      style="background-image: url(Image/homepage1.jpg) !important"
-      class="homeimg homepage-jumbotron-v7"
-    >
-      <div class="overlay">
-        <div class="container">
-          <h1 class="h1">Find and book hotels in Nigeria.</h1>
-          <h2>Search through 13,171 hotels in Nigeria</h2>
-        </div>
+  <div style="background-image: url(Image/homepage1.jpg) !important" class="homeimg homepage-jumbotron-v7">
+    <div class="overlay">
+      <div class="container">
+        <h1 class="h1">Find and book hotels in Nigeria.</h1>
+        <h2>Search through 13,171 hotels in Nigeria</h2>
       </div>
     </div>
-    <div class="inputSelect">
-      <div class="box">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input
-          type="text"
-          name="hotelSearch"
-          id=""
-          placeholder="Search for city or particular hotel"
-        />
-      </div>
-      <input class="dateInput" type="date" name="checkin date" id="checkdate" />
-      <input class="btnInput" type="button" value="Find Hotels" />
+  </div>
+  <div class="inputSelect">
+    <div class="box">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" name="hotelSearch" id="" placeholder="Search for city or particular hotel" />
     </div>
+    <input class="dateInput" type="date" name="checkin date" id="checkdate" />
+    <input class="btnInput" type="button" value="Find Hotels" />
+  </div>
 
-    
-  </body>
+
+</body>
+
 </html>
