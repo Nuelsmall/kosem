@@ -166,20 +166,159 @@ nav .account > * {
   font-size: 16px;
   padding-left: 20px;
 }
-.dateInput{
+.dateInput {
   padding: 20px;
   border: 1px solid #aaa;
   border-radius: 4px;
   height: 50px;
 }
 
-.btnInput{
+.btnInput {
   color: #fff;
   background-color: #00aeff;
   height: 50px;
-  width: 150px;
   border-radius: 4px;
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+/* styling for the suggested section */
+
+.suggested_destinations {
+  display: grid;
+  justify-content: center;
+}
+.suggested_destinations .header {
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+.header {
+  font-size: 24px;
+  color: #4f4f4f;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.sub-header {
+  color: #084482;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.tiny-divider {
+  border-top: 3px solid #00aeff;
+  margin: 1.5rem auto;
+  width: 4rem;
+}
+/* styling for places and hotels */
+.places {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+}
+.placeBtn {
+  background-color: white;
+  height: 90px;
+  width: 10vw;
+  border: 2px solid #00aeff;
+  border-radius: 5px;
+  margin: 8px;
+}
+.btnText {
+  text-decoration: none;
+}
+.topBTN {
+  text-align: center;
+  font-size: 18px;
+  color: #00aeff;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.subBTN {
+  text-align: center;
+  color: #333435;
+  margin-top: 5px;
+}
+.placeBtn:hover {
+  background-color: #00aeff;
+  color: #fff;
+}
+.topBTN:hover {
+  color: #fff;
+}
+
+/* Styling for top hotel deals */
+.top_destinations {
+  display: grid;
+  justify-content: center;
+  /* margin-left: 10px; */
+}
+.top_destinations .headerTop {
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+.headerTop {
+  font-size: 24px;
+  color: #4f4f4f;
+  font-weight: 700;
+  margin-left: 50px;
+}
+
+.sub-headerTop {
+  color: #084482;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.tiny-divider {
+  border-top: 3px solid #00aeff;
+  margin: 1.5rem auto;
+  width: 4rem;
+}
+
+/* styling for property container */
+.top-Hotel-container {
+  width: 60vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  font-size: 16px;
+  color: rgb(33, 37, 41);
+  font-family: "lato", sans-serif;
+   position: relative;
+}
+/* styling for hotel detailed sections */
+.Lekki-Phase-1{
+  height: 260px;
+  border: 1px solid rgb(143, 141, 141);
+  position: relative;
+} .image_1 {
+  height: 200px;
+  width: 100%;
+  cursor: pointer;
+}.detail-item {
+  margin-left: 10px;
+  padding: 2px;
+} a {
+  text-decoration: none;
+}.kitex {
+  color: #00aeff;
+}.lekki {
+  color: #333435;
+}
+
+/* styling for discount status */
+.discount-status {
+  background-color: #CF5404;
+  color: #fff;
+  height: 30px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  position: absolute;
+  top: 10px;
 }
