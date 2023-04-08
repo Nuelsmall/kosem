@@ -447,10 +447,21 @@ margin-left: 5px;
 
   /* styling for get app section */
   .getAppContainer{
-    background-color: yellowgreen;
-    height: 60%;
-    width: auto;
+    background-color: #EFF8FB;;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
   }
   .getAppImg{
     width: auto;
-  }
+    margin-right: 20px;
+   }
+
+  .getAppText{
+    padding-top: 60px;
+    marging: left 20px;
+   }
