@@ -182,30 +182,24 @@ nav .account > * {
   outline: none;
   cursor: pointer;
 }
+/* Styling for the homepage end here */
 
 /* styling for the suggested section */
 
 .suggested_destinations {
-  display: grid;
-  justify-content: center;
-}
-.suggested_destinations .header {
+  text-align: center;
   margin-top: 50px;
   margin-bottom: 5px;
-}
+  }
 .header {
   font-size: 24px;
   color: #4f4f4f;
   font-weight: 700;
-  margin-left: 15px;
-}
-
+  }
 .sub-header {
   color: #084482;
-  font-weight: 400;
-  margin-right: 20px;
+  font-weight: 400; 
 }
-
 .tiny-divider {
   border-top: 3px solid #00aeff;
   margin: 1.5rem auto;
@@ -255,22 +249,21 @@ nav .account > * {
   justify-content: center;
   /* margin-left: 10px; */
 }
-.top_destinations .headerTop {
+.top_destinations  {
+  text-align: center;
   margin-top: 50px;
   margin-bottom: 5px;
-}
+  }
 .headerTop {
   font-size: 24px;
   color: #4f4f4f;
   font-weight: 700;
-  margin-left: 50px;
-}
+  }
 
 .sub-headerTop {
   color: #084482;
   font-weight: 400;
-  margin-right: 20px;
-}
+  }
 
 .tiny-divider {
   border-top: 3px solid #00aeff;
@@ -278,7 +271,7 @@ nav .account > * {
   width: 4rem;
 }
 
-/* styling for property container */
+/* styling top-hotel container */
 .top-Hotel-container {
   width: 60vw;
   margin: auto;
@@ -322,3 +315,142 @@ nav .account > * {
   position: absolute;
   top: 10px;
 }
+
+/* styling for popular cities with hotels.ng */
+.popular_destinations {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.headerPop {
+  font-size: 24px;
+  color: #4f4f4f;
+  font-weight: 700;
+  /* margin-left: 50px; */
+}
+
+.sub-headerPop {
+  color: #4f4f4f;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+
+
+.states-grid {
+  text-align: left;
+}
+.states-grid, .top-deals {
+  margin-top: 40px;
+}
+
+/* styling for cities to book hotel */
+.states-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 2em;
+  grid-row-gap: 1em;
+  width: 60%;
+  margin: auto;
+  color: #4f4f4f;
+  }
+
+  .states-grid  a {
+    color: #00aeff;
+  }
+
+  /* styling for special hot deal section */
+.special_deal{
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  text-align: center;
+  background-color: #f7f6f6;
+}
+.special {
+  font-size: 24px;
+  color: #4f4f4f;
+  font-weight: 700;
+ }
+
+.secret {
+  color: #4f4f4f;
+  font-weight: 400;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.emailInput {
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  height: 50px;
+  width: 35rem;
+}
+
+.btnSubscribe {
+  color: #fff;
+  background-color: #00aeff;
+  height: 50px;
+  width: 8rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+margin-left: 5px;
+}
+  /* styling for special hot deal section end here*/
+ 
+  /* styling for more bookings section */
+.moreBookings{
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  text-align: center;
+  }
+.More {
+  font-size: 24px;
+  color: #4f4f4f;
+  font-weight: 700;
+ }
+
+.findOut{
+  color: #4f4f4f;
+  font-weight: 400;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+.emailInput {
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  height: 50px;
+  width: 35rem;
+}
+
+.btnAdd{
+  color: #fff;
+  font-size: large;
+  background-color: #00aeff;
+  height: 50px;
+  width: 12rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+  /* styling for more booking section end here*/
+
+  /* styling for get app section */
+  .getAppContainer{
+    background-color: yellowgreen;
+    height: 60%;
+    width: auto;
+  }
+  .getAppImg{
+    width: auto;
+  }
