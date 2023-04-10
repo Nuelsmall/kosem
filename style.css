@@ -5,6 +5,12 @@
   font-family: "Lato", sans-serif;
 }
 
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* styling for the nav bar begins*/
 nav {
   display: flex;
@@ -17,10 +23,12 @@ nav {
   font-weight: 700;
   padding: 0 50px;
 }
-nav > *:not(:nth-child(1)) {
+
+nav>*:not(:nth-child(1)) {
   border-right: 2px solid #fff;
   padding-right: 10px;
 }
+
 .logoImg {
   text-decoration: none;
   font-family: "Lato", sans-serif;
@@ -28,8 +36,8 @@ nav > *:not(:nth-child(1)) {
   font-size: x-large;
   margin-right: auto;
 }
+
 .whatsapp-icon {
-  height: 30px;
   width: 30px;
 }
 
@@ -39,25 +47,40 @@ nav .support {
   padding-right: 20px;
   display: flex;
   border-radius: 25px;
+  height: 38px;
+  text-align: center;
 }
-.support > img {
+
+.support>img {
   border-radius: 50%;
 }
-.support-text {
-  font-size: 10px;
-  color: rgb(26, 182, 255);
 
+.support-text {
+  font-size: .8rem;
+  color: rgb(26, 182, 255);
 }
+
+.dropdown-item>i {
+  color: #00aeff;
+  width: 32px;
+}
+
+.fa-skype {
+  width: 50px;
+}
+
 #tel {
-  font-size: 14px;
+  font-size: .9rem;
   color: #fff;
+  text-decoration: none;
 }
 
 nav .currency {
   display: flex;
   align-items: center;
 }
-.currency > i {
+
+.currency>i {
   margin-left: 5px;
 }
 
@@ -66,8 +89,84 @@ nav .account {
   align-items: center;
   border: none;
 }
-nav .account > * {
+
+nav .account>* {
   margin-left: 5px;
+}
+
+#dropdown-icon {
+  position: absolute;
+  right: 50px;
+  color: #ffff;
+}
+
+.dropdown-menu {
+  display: none;
+  margin-top: 12px;
+  border: none;
+}
+
+.showDropdown {
+  display: block;
+  position: absolute;
+  width: 80%;
+  margin-left: 40px;
+  color: #555;
+}
+
+.dropdown-item #tel {
+  color: rgb(6, 54, 104)
+}
+
+.showCurrencyDropdown {
+  display: block;
+  position: absolute;
+  right: 0px;
+}
+
+.showCurrencyDropdown>* {
+  padding: 0 20px;
+}
+
+.showCurrencyDropdown>.dropdown-item {
+  line-height: 30px;
+}
+
+.dropdown-item:hover {
+  color: #fff;
+  background-color: #00aeff;
+}
+
+.dropdown .fa-caret-up {
+  height: 12px;
+  width: 14px;
+}
+
+/* Account dropdown */
+.account-dropdown-menu {
+  display: none;
+}
+
+.showAccount {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  font-size: 14px;
+  color: #464646;
+  padding: 20px;
+  right: 0px;
+  margin-top: 12px;
+}
+
+.account-dropdown-menu button {
+  background-color: #00aeff;
+  color: #fff;
+  width: 170px;
+  height: 32px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 /* styling for the nav bar ends */
@@ -85,6 +184,7 @@ nav .account > * {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 .homeimg {
   background-size: cover;
   background-position: center center;
@@ -96,6 +196,7 @@ nav .account > * {
   /* color: inherit; */
   background-color: #eee;
 }
+
 .overlay {
   display: block;
   color: #fff;
@@ -153,12 +254,12 @@ nav .account > * {
   border-radius: 4px;
 }
 
-.box > i {
+.box>i {
   font-size: 20px;
   color: #777;
 }
 
-.box > input {
+.box>input {
   flex: 1;
   height: 40px;
   border: none;
@@ -166,6 +267,7 @@ nav .account > * {
   font-size: 16px;
   padding-left: 20px;
 }
+
 .dateInput {
   padding: 20px;
   border: 1px solid #aaa;
@@ -182,6 +284,7 @@ nav .account > * {
   outline: none;
   cursor: pointer;
 }
+
 /* Styling for the homepage end here */
 
 /* styling for the suggested section */
@@ -190,21 +293,25 @@ nav .account > * {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 5px;
-  }
+}
+
 .header {
   font-size: 24px;
   color: #4f4f4f;
   font-weight: 700;
-  }
+}
+
 .sub-header {
   color: #084482;
-  font-weight: 400; 
+  font-weight: 400;
 }
+
 .tiny-divider {
   border-top: 3px solid #00aeff;
   margin: 1.5rem auto;
   width: 4rem;
 }
+
 /* styling for places and hotels */
 .places {
   display: flex;
@@ -212,6 +319,7 @@ nav .account > * {
   align-items: center;
   height: 120px;
 }
+
 .placeBtn {
   background-color: white;
   height: 90px;
@@ -220,9 +328,11 @@ nav .account > * {
   border-radius: 5px;
   margin: 8px;
 }
+
 .btnText {
   text-decoration: none;
 }
+
 .topBTN {
   text-align: center;
   font-size: 18px;
@@ -230,15 +340,18 @@ nav .account > * {
   font-weight: 600;
   margin-top: 5px;
 }
+
 .subBTN {
   text-align: center;
   color: #333435;
   margin-top: 5px;
 }
+
 .placeBtn:hover {
   background-color: #00aeff;
   color: #fff;
 }
+
 .topBTN:hover {
   color: #fff;
 }
@@ -249,21 +362,23 @@ nav .account > * {
   justify-content: center;
   /* margin-left: 10px; */
 }
-.top_destinations  {
+
+.top_destinations {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 5px;
-  }
+}
+
 .headerTop {
   font-size: 24px;
   color: #4f4f4f;
   font-weight: 700;
-  }
+}
 
 .sub-headerTop {
   color: #084482;
   font-weight: 400;
-  }
+}
 
 .tiny-divider {
   border-top: 3px solid #00aeff;
@@ -281,25 +396,36 @@ nav .account > * {
   font-size: 16px;
   color: rgb(33, 37, 41);
   font-family: "lato", sans-serif;
-   position: relative;
+  position: relative;
 }
+
 /* styling for hotel detailed sections */
-.Lekki-Phase-1{
+.Lekki-Phase-1 {
   height: 260px;
   border: 1px solid rgb(143, 141, 141);
   position: relative;
-} .image_1 {
+}
+
+.image_1 {
   height: 200px;
   width: 100%;
   cursor: pointer;
-}.detail-item {
+}
+
+.detail-item {
   margin-left: 10px;
   padding: 2px;
-} a {
+}
+
+a {
   text-decoration: none;
-}.kitex {
+}
+
+.kitex {
   color: #00aeff;
-}.lekki {
+}
+
+.lekki {
   color: #333435;
 }
 
@@ -322,6 +448,7 @@ nav .account > * {
   margin-bottom: 5px;
   text-align: center;
 }
+
 .headerPop {
   font-size: 24px;
   color: #4f4f4f;
@@ -340,7 +467,9 @@ nav .account > * {
 .states-grid {
   text-align: left;
 }
-.states-grid, .top-deals {
+
+.states-grid,
+.top-deals {
   margin-top: 40px;
 }
 
@@ -354,25 +483,26 @@ nav .account > * {
   width: 60%;
   margin: auto;
   color: #4f4f4f;
-  }
+}
 
-  .states-grid  a {
-    color: #00aeff;
-  }
+.states-grid a {
+  color: #00aeff;
+}
 
-  /* styling for special hot deal section */
-.special_deal{
+/* styling for special hot deal section */
+.special_deal {
   padding: 30px;
   margin-top: 50px;
   margin-bottom: 5px;
   text-align: center;
   background-color: #f7f6f6;
 }
+
 .special {
   font-size: 24px;
   color: #4f4f4f;
   font-weight: 700;
- }
+}
 
 .secret {
   color: #4f4f4f;
@@ -381,6 +511,7 @@ nav .account > * {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .emailInput {
   padding: 20px;
   border: 1px solid #aaa;
@@ -398,24 +529,26 @@ nav .account > * {
   border: none;
   outline: none;
   cursor: pointer;
-margin-left: 5px;
+  margin-left: 5px;
 }
-  /* styling for special hot deal section end here*/
- 
-  /* styling for more bookings section */
-.moreBookings{
+
+/* styling for special hot deal section end here*/
+
+/* styling for more bookings section */
+.moreBookings {
   padding: 30px;
   margin-top: 50px;
   margin-bottom: 5px;
   text-align: center;
-  }
+}
+
 .More {
   font-size: 24px;
   color: #4f4f4f;
   font-weight: 700;
- }
+}
 
-.findOut{
+.findOut {
   color: #4f4f4f;
   font-weight: 400;
   margin-right: 20px;
@@ -423,6 +556,7 @@ margin-left: 5px;
   padding-bottom: 20px;
   letter-spacing: 1.5px;
 }
+
 .emailInput {
   padding: 20px;
   border: 1px solid #aaa;
@@ -431,7 +565,7 @@ margin-left: 5px;
   width: 35rem;
 }
 
-.btnAdd{
+.btnAdd {
   color: #fff;
   font-size: large;
   background-color: #00aeff;
@@ -443,25 +577,28 @@ margin-left: 5px;
   cursor: pointer;
   margin-left: 5px;
 }
-  /* styling for more booking section end here*/
 
-  /* styling for get app section */
-  .getAppContainer{
-    background-color: #EFF8FB;;
-    height: auto;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
+/* styling for more booking section end here*/
 
-  }
-  .getAppImg{
-    width: auto;
-    margin-right: 20px;
-   }
+/* styling for get app section */
+.getAppContainer {
+  background-color: #EFF8FB;
+  ;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 
-  .getAppText{
-    padding-top: 60px;
-    marging: left 20px;
-   }
+}
+
+.getAppImg {
+  width: auto;
+  margin-right: 20px;
+}
+
+.getAppText {
+  padding-top: 60px;
+  marging: left 20px;
+}
