@@ -367,9 +367,18 @@
         </p>
       </div class="emailRecieve" >
       <input class="emailInput" type="text" placeholder="Enter your email address" />
-      <input class="btnSubscribe" type="button" value="Subscribe" />
+      <input class="btnSubscribe" onclick="openPopup()" type="button" value="Subscribe" />
     </div>
     </div>
+<!-- coding for subribe succesful popup -->
+<div class="popup" id="subcribe" >
+  <img src="img/tick.png">
+  <h2>Thank You!</h2>
+  <p>You have sucessfully subcribed, you will be notify shortly. <br> Click Ok to refresh. Thanks!</p>
+  <button type="submit" onclick="closePopup()" >Ok</button>
+</div>
+</div>
+
 <!-- coding for get more booking section -->
     <div class="moreBookings">
       <div>
@@ -430,6 +439,25 @@
   </div> 
 </div>
 
+
+<script>
+  const subscribe = document.getElementById('subcribe')
+
+// form.addEventListener('submit',function(event){
+//   event.preventDefault() //prevent the form from autosubmitting
+// })
+
+// code to display successful subscribe prompt
+let popup = document.getElementById('subcribe');
+
+function openPopup(){
+  popup.classList.add("open-popup");
+}
+
+function closePopup(){
+  popup.classList.remove("open-popup");
+}
+</script>
 </body>
 
 </html>
