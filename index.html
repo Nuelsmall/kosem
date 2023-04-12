@@ -288,6 +288,16 @@
       <a href="https://hotels.ng/hotels-in-abia">Hotels in Abia</a><br> 295 <a href="https://hotels.ng/hotels-in-abia"
         style="font-size: 14px; color: unset !important; font-weight: normal;">hotels in Abia</a> with over 171 hotel
       reviews
+<!-- coding for special deal -->
+    <div class="special_deal">
+      <div class="popular_destinations">
+        <p class="special">Special Hotel Deals and Offers</p>
+        <p class="secret">
+          Enter your email address to recieve secret hotel deals
+        </p>
+      </div class="emailRecieve" >
+      <input class="emailInput" type="text" placeholder="Enter your email address" />
+      <input class="btnSubscribe" onclick="openPopup()" type="button" value="Subscribe" />
     </div>
     <div>
       <a href="https://hotels.ng/hotels-in-abuja">Hotels in Abuja</a><br> 1,157 <a
@@ -390,6 +400,24 @@
         href="https://hotels.ng/hotels-in-jigawa"
         style="font-size: 14px; color: unset !important; font-weight: normal;">hotels in Jigawa</a> with over 5 hotel
       reviews
+<!-- coding for subribe succesful popup -->
+<div class="popup" id="subcribe" >
+  <img src="img/tick.png">
+  <h2>Thank You!</h2>
+  <p>You have sucessfully subcribed, you will be notify shortly. <br> Click Ok to refresh. Thanks!</p>
+  <button type="submit" onclick="closePopup()" >Ok</button>
+</div>
+</div>
+
+<!-- coding for get more booking section -->
+    <div class="moreBookings">
+      <div>
+        <p class="More">Get More Bookings for Your Hotel</p>
+        <p class="findOut">
+          Find out why over 13,171 hotel manager trust hotel.ng
+        </p>
+      </div class="emailRecieve" >
+      <input class="btnAdd" type="button" value="Add Your Hotel" />
     </div>
     <div>
       <a href="https://hotels.ng/hotels-in-kaduna">Hotels in Kaduna</a><br> 330 <a
@@ -573,6 +601,25 @@
   </div>
 
   <script src="app.js"></script>
+
+<script>
+  const subscribe = document.getElementById('subcribe')
+
+// form.addEventListener('submit',function(event){
+//   event.preventDefault() //prevent the form from autosubmitting
+// })
+
+// code to display successful subscribe prompt
+let popup = document.getElementById('subcribe');
+
+function openPopup(){
+  popup.classList.add("open-popup");
+}
+
+function closePopup(){
+  popup.classList.remove("open-popup");
+}
+</script>
 </body>
 
 </html>
