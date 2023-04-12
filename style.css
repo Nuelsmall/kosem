@@ -26,7 +26,7 @@ nav {
 
 nav>*:not(:nth-child(1)) {
   border-right: 2px solid #fff;
-  padding-right: 10px;
+  padding: 0 10px;
 }
 
 .logoImg {
@@ -59,15 +59,13 @@ nav .support {
   font-size: .8rem;
   color: rgb(26, 182, 255);
 }
-
+.support-text > .dropdown-item {
+  padding: 20px 50px;
+}
 .dropdown-item>i {
   color: #00aeff;
-  width: 32px;
 }
 
-.fa-skype {
-  width: 50px;
-}
 
 #tel {
   font-size: .9rem;
@@ -90,7 +88,7 @@ nav .account {
   border: none;
 }
 
-nav .account>* {
+nav .account> * {
   margin-left: 5px;
 }
 
@@ -109,23 +107,33 @@ nav .account>* {
 .showDropdown {
   display: block;
   position: absolute;
-  width: 80%;
+  background-color: #ffff;
   margin-left: 40px;
   color: #555;
 }
 
+.dropdown-item {
+  padding: 10px;
+}
+
 .dropdown-item #tel {
-  color: rgb(6, 54, 104)
+  color: rgb(6, 54, 104);
+  /* padding: 5px; */
 }
 
 .showCurrencyDropdown {
+  background-color: #fff;
+  color: #555;
+  right: 40px;
+  width: 220px;
   display: block;
   position: absolute;
-  right: 0px;
+  font-size: 14px;
+  margin-top: 18px;
 }
 
 .showCurrencyDropdown>* {
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .showCurrencyDropdown>.dropdown-item {
@@ -134,17 +142,13 @@ nav .account>* {
 
 .dropdown-item:hover {
   color: #fff;
-  background-color: #00aeff;
-}
-
-.dropdown .fa-caret-up {
-  height: 12px;
-  width: 14px;
+  background-color:rgb(143, 141, 140, 20%);
 }
 
 /* Account dropdown */
 .account-dropdown-menu {
   display: none;
+  width: 200px;
 }
 
 .showAccount {
@@ -160,12 +164,12 @@ nav .account>* {
 
 .account-dropdown-menu button {
   background-color: #00aeff;
-  color: #fff;
   width: 170px;
+  color: #fff;
   height: 32px;
   border-radius: 5px;
   border: none;
-  margin-bottom: 5px;
+  margin: 5px;
   padding-bottom: 5px;
 }
 
