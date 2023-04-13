@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato' sans-serif;
+}
+
+.hotel-add-header{
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  margin-top: 20px;
+  line-height: 1.1; 
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hotel-add-sub-header {
+  font-size: 18px;
+}
+
+.hotel-add {
+  margin-top: 20px;
+  display: flex;
+ justify-content: space-evenly;
+ background-color: blue;
+}
+
+.hotel-add .main-field {
+  max-width: 520px;
+}
+
+.main-field {
+  background-color: aquamarine;
+  height: auto;
+}
+
+.faq{
+  background-color: yellowgreen;
+}

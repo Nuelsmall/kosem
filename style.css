@@ -8,6 +8,12 @@ body {
   position: relative;
 }
 
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* styling for the nav bar begins*/
 nav {
   display: flex;
@@ -20,10 +26,12 @@ nav {
   font-weight: 700;
   padding: 0 50px;
 }
-nav > *:not(:nth-child(1)) {
+
+nav>*:not(:nth-child(1)) {
   border-right: 2px solid #fff;
-  padding-right: 10px;
+  padding: 0 10px;
 }
+
 .logoImg {
   text-decoration: none;
   font-family: "Lato", sans-serif;
@@ -31,8 +39,8 @@ nav > *:not(:nth-child(1)) {
   font-size: x-large;
   margin-right: auto;
 }
+
 .whatsapp-icon {
-  height: 30px;
   width: 30px;
 }
 
@@ -42,24 +50,38 @@ nav .support {
   padding-right: 20px;
   display: flex;
   border-radius: 25px;
+  height: 38px;
+  text-align: center;
 }
-.support > img {
+
+.support>img {
   border-radius: 50%;
 }
+
 .support-text {
-  font-size: 10px;
+  font-size: .8rem;
   color: rgb(26, 182, 255);
 }
+.support-text > .dropdown-item {
+  padding: 20px 50px;
+}
+.dropdown-item>i {
+  color: #00aeff;
+}
+
+
 #tel {
-  font-size: 14px;
+  font-size: .9rem;
   color: #fff;
+  text-decoration: none;
 }
 
 nav .currency {
   display: flex;
   align-items: center;
 }
-.currency > i {
+
+.currency>i {
   margin-left: 5px;
 }
 
@@ -68,8 +90,90 @@ nav .account {
   align-items: center;
   border: none;
 }
-nav .account > * {
+
+nav .account> * {
   margin-left: 5px;
+}
+
+#dropdown-icon {
+  position: absolute;
+  right: 50px;
+  color: #ffff;
+}
+
+.dropdown-menu {
+  display: none;
+  margin-top: 12px;
+  border: none;
+}
+
+.showDropdown {
+  display: block;
+  position: absolute;
+  background-color: #ffff;
+  margin-left: 40px;
+  color: #555;
+}
+
+.dropdown-item {
+  padding: 10px;
+}
+
+.dropdown-item #tel {
+  color: rgb(6, 54, 104);
+  /* padding: 5px; */
+}
+
+.showCurrencyDropdown {
+  background-color: #fff;
+  color: #555;
+  right: 40px;
+  width: 220px;
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  margin-top: 18px;
+}
+
+.showCurrencyDropdown>* {
+  padding: 0 15px;
+}
+
+.showCurrencyDropdown>.dropdown-item {
+  line-height: 30px;
+}
+
+.dropdown-item:hover {
+  color: #fff;
+  background-color:rgb(143, 141, 140, 20%);
+}
+
+/* Account dropdown */
+.account-dropdown-menu {
+  display: none;
+  width: 200px;
+}
+
+.showAccount {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  font-size: 14px;
+  color: #464646;
+  padding: 20px;
+  right: 0px;
+  margin-top: 12px;
+}
+
+.account-dropdown-menu button {
+  background-color: #00aeff;
+  width: 170px;
+  color: #fff;
+  height: 32px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  padding-bottom: 5px;
 }
 
 /* styling for the nav bar ends */
@@ -87,6 +191,7 @@ nav .account > * {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 .homeimg {
   background-size: cover;
   background-position: center center;
@@ -98,6 +203,7 @@ nav .account > * {
   /* color: inherit; */
   background-color: #eee;
 }
+
 .overlay {
   display: block;
   color: #fff;
@@ -155,12 +261,12 @@ nav .account > * {
   border-radius: 4px;
 }
 
-.box > i {
+.box>i {
   font-size: 20px;
   color: #777;
 }
 
-.box > input {
+.box>input {
   flex: 1;
   height: 40px;
   border: none;
@@ -168,6 +274,7 @@ nav .account > * {
   font-size: 16px;
   padding-left: 20px;
 }
+
 .dateInput {
   padding: 20px;
   border: 1px solid #aaa;
@@ -185,27 +292,25 @@ nav .account > * {
   cursor: pointer;
 }
 
+/* Styling for the homepage end here */
+
 /* styling for the suggested section */
 
 .suggested_destinations {
-  display: grid;
-  justify-content: center;
-}
-.suggested_destinations .header {
+  text-align: center;
   margin-top: 50px;
   margin-bottom: 5px;
 }
+
 .header {
   font-size: 24px;
   color: #4f4f4f;
   font-weight: 700;
-  margin-left: 15px;
 }
 
 .sub-header {
   color: #084482;
   font-weight: 400;
-  margin-right: 20px;
 }
 
 .tiny-divider {
@@ -213,6 +318,7 @@ nav .account > * {
   margin: 1.5rem auto;
   width: 4rem;
 }
+
 /* styling for places and hotels */
 .places {
   display: flex;
@@ -220,6 +326,7 @@ nav .account > * {
   align-items: center;
   height: 120px;
 }
+
 .placeBtn {
   background-color: white;
   height: 90px;
@@ -228,9 +335,11 @@ nav .account > * {
   border-radius: 5px;
   margin: 8px;
 }
+
 .btnText {
   text-decoration: none;
 }
+
 .topBTN {
   text-align: center;
   font-size: 18px;
@@ -238,15 +347,18 @@ nav .account > * {
   font-weight: 600;
   margin-top: 5px;
 }
+
 .subBTN {
   text-align: center;
   color: #333435;
   margin-top: 5px;
 }
+
 .placeBtn:hover {
   background-color: #00aeff;
   color: #fff;
 }
+
 .topBTN:hover {
   color: #fff;
 }
@@ -257,21 +369,22 @@ nav .account > * {
   justify-content: center;
   /* margin-left: 10px; */
 }
-.top_destinations .headerTop {
+
+.top_destinations {
+  text-align: center;
   margin-top: 50px;
   margin-bottom: 5px;
 }
+
 .headerTop {
   font-size: 24px;
   color: #4f4f4f;
   font-weight: 700;
-  margin-left: 50px;
 }
 
 .sub-headerTop {
   color: #084482;
   font-weight: 400;
-  margin-right: 20px;
 }
 
 .tiny-divider {
@@ -280,7 +393,7 @@ nav .account > * {
   width: 4rem;
 }
 
-/* styling for property container */
+/* styling top-hotel container */
 .top-Hotel-container {
   width: 60vw;
   margin: auto;
@@ -292,6 +405,7 @@ nav .account > * {
   font-family: "lato", sans-serif;
   position: relative;
 }
+
 /* styling for hotel detailed sections */
 .Lekki-Phase-1 {
   height: 260px;
@@ -303,10 +417,12 @@ nav .account > * {
   width: 100%;
   cursor: pointer;
 }
+
 .detail-item {
   margin-left: 10px;
   padding: 2px;
 }
+
 a {
   text-decoration: none;
 }
@@ -329,6 +445,7 @@ a {
   position: absolute;
   top: 10px;
 }
+
 /* for search section on page 2*/
 .inputSearch {
   display: flex;
@@ -464,4 +581,212 @@ a {
 .right-side {
   /* border: solid; */
   /* background-color: #cf5404; */
+=======
+
+/* styling for popular cities with hotels.ng */
+.popular_destinations {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.headerPop {
+  font-size: 24px;
+  color: #4f4f4f;
+  font-weight: 700;
+  /* margin-left: 50px; */
+}
+
+.sub-headerPop {
+  color: #4f4f4f;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+
+
+.states-grid {
+  text-align: left;
+}
+
+.states-grid,
+.top-deals {
+  margin-top: 40px;
+}
+
+/* styling for cities to book hotel */
+.states-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 2em;
+  grid-row-gap: 1em;
+  width: 60%;
+  margin: auto;
+  color: #4f4f4f;
+}
+
+.states-grid a {
+  color: #00aeff;
+}
+
+/* styling for special hot deal section */
+.special_deal {
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  text-align: center;
+  background-color: #f7f6f6;
+}
+
+.special {
+  font-size: 24px;
+  color: #4f4f4f;
+  font-weight: 700;
+}
+
+.secret {
+  color: #4f4f4f;
+  font-weight: 400;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.emailInput {
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  height: 50px;
+  width: 35rem;
+}
+
+.btnSubscribe {
+  color: #fff;
+  background-color: #00aeff;
+  height: 50px;
+  width: 8rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+/* styling for special hot deal section end here*/
+
+/* styling for more bookings section */
+.moreBookings {
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.More {
+  font-size: 24px;
+  color: #4f4f4f;
+  font-weight: 700;
+}
+
+.findOut {
+  color: #4f4f4f;
+  font-weight: 400;
+  margin-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+
+.emailInput {
+  padding: 20px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  height: 50px;
+  width: 35rem;
+}
+
+.btnAdd {
+  color: #fff;
+  font-size: large;
+  background-color: #00aeff;
+  height: 50px;
+  width: 12rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+  /* styling for more booking section end here*/
+
+  /* styling for get app section */
+  .getAppContainer{
+    background-color: #EFF8FB;;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+  }
+  .getAppImg{
+    width: auto;
+    margin-right: 20px;
+   }
+
+  .getAppText{
+    padding-top: 60px;
+    marging: left 20px;
+   }
+
+ /* styling for the popup */
+ .popup{
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  border: 1px solid #777777;
+  visibility: hidden;
+  transition: transform 0.4s, top  0.4s;
+}
+
+.open-popup{
+  visibility: visible;
+  top: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+
 }
