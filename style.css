@@ -652,3 +652,21 @@ a {
   cursor: pointer;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* footer style */
+footer {
+  color: #00aeff;
+}
+table {
+  width: 100vw;
+  padding: 10%;
+}
+table th {
+  padding-bottom: 5px;
+  text-align: left;
+  color: #9fa7ad;
+  border-bottom: 1px solid #9fa7ad;
+}
+table td {
+  padding: 1px;
+}
