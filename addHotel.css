@@ -23,18 +23,118 @@
   margin-top: 20px;
   display: flex;
  justify-content: space-evenly;
- background-color: blue;
 }
 
 .hotel-add .main-field {
   max-width: 520px;
 }
-
+/* styling for the add hotel form fills */
 .main-field {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   height: auto;
+  color: #4f4f4f;
+  width: 100%;
+}
+.hotel-info{
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 600;  
 }
 
+.form-group {
+  margin-right: auto;
+  margin-bottom: 20px;
+  max-width: 100%;
+  margin-left: auto;
+  position: relative;
+  color: #4f4f4f
+}
+
+label{
+  color: #4f4f4f !important;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 5px;
+  max-width: 100%;
+}
+
+.hotel-add input, .hotel-add select {
+  border: 1px solid #bdbdbd;
+  box-shadow: none;
+  height: 41px;
+  border-radius: 4px;
+  color: #4f4f4f;
+}
+
+.form-control {
+  height: 39px;
+  outline: 0;
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.btn{
+  background-color: #00aeff;
+  color: #fff;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  border-radius: 4px;
+  height: 41px;
+  border: 0;
+  width: 100%;
+  transition: background-color .3s ease-in;
+  cursor: pointer;
+}
+
+
+
+/* styling for the faq */
 .faq{
-  background-color: yellowgreen;
+  /* background-color: yellowgreen; */
+  border: 1px solid #e2e6e9;
+  width: 28vw;
+  height: 525px;
+ }
+
+.faq .q {
+  color: #00aeff;
+  font-weight: 700;
+  margin-bottom: 5px;
+  }
+
+.faq .a {
+  padding-left: 0;
+  color: #4f4f4f;
+  font-size: 14px;
+}
+p {
+  margin: 0 0 10px;
+}
+
+.question{
+  margin: 10px;
+  text-align: justify;
+}
+
+.faq-header{
+  border: 1px solid #555;
+  text-align: center;
+  padding: 20px;
+  background-color: #F2F2F2;
+  color: #4f4f4f;
+  font-weight: 700;
+  font-size: 18px;
 }
