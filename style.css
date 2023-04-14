@@ -447,7 +447,7 @@ a {
 }
 
 /* styling for popular cities with hotels.ng */
- .popular_destinations {
+.popular_destinations {
   margin-top: 50px;
   margin-bottom: 5px;
   text-align: center;
@@ -464,83 +464,9 @@ a {
   color: #4f4f4f;
   font-weight: 400;
   margin-right: 20px;
-} 
-.cities {
-  margin-bottom: 10rem;
 }
 
- .rows {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 70%;
-  margin: auto;
-  /* justify-content: center; */
-  /* align-items: center; */
-  gap: 2.5rem;
-}
 
-.cities__card {
-  /* overflow: hidden; */
-  transition: all ease-in 0.5s;
-  height: 24rem;
-  cursor: pointer;
-}
-.cities__card:hover{
-  opacity: 1;
-}
-.rows .cities__card--img {
-  width: 100%;
-  vertical-align: middle;
-  border-radius: 4px;
-}
-.cities__card .card__details {
-  position: relative;
-  top: -10rem;
-  text-align: center;
-  color: #fff;
-}
-
-.cities__card .card__details h3 {
-  font-size: 24px;
-  /* color: #00aeff; */
-}
-
-.card__layer {
-  width: auto;
-  height: 8rem;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.4);
-  transform: translateY(-14.1rem);
-  border-radius: 0px 0px 4px 4px;
-  transition: all 0.7s;
-  opacity: 0;
-}
-
-.card__layer .card__cta {
-  /* color: blue; */
-  font-size: 1.6rem;
-  display: inline-block;
-  font-weight: 700;
-  padding: 0.8rem 1.4rem;
-  margin: 0 auto;
-  border-radius: 0.5rem;
-  border: 1.8px solid #fff;
-  transform: translateY(2.5rem);
-  transition: all 0.7s;
-}
-
-.card__layer:hover {
-  /* background-color: yellowgreen; */
-   opacity: 1;
-
-}
-.cities__card .card__details p {
-  font-size: 18px;
-  font-weight: 700;
-  /* color: red; */
-}
-
-/* styling for popular cities end here */
 
 .states-grid {
   text-align: left;
