@@ -27,4 +27,3 @@ accountElem.addEventListener("click", () => {
   accountDropdown.classList.toggle("showAccount");
   console.log("Hello");
 });
-
