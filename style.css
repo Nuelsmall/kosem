@@ -601,7 +601,7 @@ a {
 
   .getAppText{
     padding-top: 60px;
-    marging: left 20px;
+    margin: left 20px;
    }
 
  /* styling for the popup */
@@ -657,16 +657,59 @@ a {
 footer {
   color: #00aeff;
 }
-table {
+footer table {
   width: 100vw;
   padding: 10%;
 }
-table th {
+footer table th {
   padding-bottom: 5px;
   text-align: left;
   color: #9fa7ad;
   border-bottom: 1px solid #9fa7ad;
 }
-table td {
+footer table td {
   padding: 1px;
+}
+
+footer .copyright {
+  color: #9fa7ad; 
+  display: flex;
+  padding: 10%;
+}
+.copyright i {
+  padding: 6px 10px;
+}
+.sponsor-container {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+
+
+/* footer styling ends */
+
+/* Styling for Lagos hotel page */
+.title-bar {
+  height: 30px;
+}
+.inputSelectLagos {
+  position: relative;
+  margin-top: 0;
+}
+
+.lagos--main {
+  display: flex;
+  padding: 10vw;
+}
+section {
+  width: 15%;
+  min-width: 270px;
+  border: 2px solid #00aeff;
+}
+main {
+  width: 85%;
+  min-width: 780px;
+  border: 2px solid #00aeff;
+
 }
